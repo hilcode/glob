@@ -1,0 +1,33 @@
+name:                glob
+version:             0.1.0.0
+github:              "hilcode/glob"
+license:             GPL-3
+author:              "Hilco Wijbenga"
+maintainer:          "hilco.wijbenga@gmail.com"
+copyright:           "Hilco Wijbenga"
+
+extra-source-files:
+- README.md
+
+synopsis:            A Glob implementation
+category:            Development
+
+description:         Please see the README on GitHub at <https://github.com/hilcode/glob#readme>.
+
+dependencies:
+- base
+- text
+
+ghc-options:
+- -Wall
+
+library:
+  source-dirs: src/main/eta
+
+executable:
+  main:                Main.hs
+  source-dirs:         src/main/eta
+  ghc-options:
+  - -threaded
+  - -rtsopts
+  - -with-rtsopts=-N

@@ -1,0 +1,51 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d66723b9749db82765c610a1045be3d39761725f9e073f5404d056977b62dca9
+
+name:           glob
+version:        0.1.0.0
+synopsis:       A Glob implementation
+description:    Please see the README on GitHub at <https://github.com/hilcode/glob#readme>.
+category:       Development
+homepage:       https://github.com/hilcode/glob#readme
+bug-reports:    https://github.com/hilcode/glob/issues
+author:         Hilco Wijbenga
+maintainer:     hilco.wijbenga@gmail.com
+copyright:      Hilco Wijbenga
+license:        GPL-3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/hilcode/glob
+
+library
+  exposed-modules:
+      Main
+  other-modules:
+      Paths_glob
+  hs-source-dirs:
+      src/main/eta
+  ghc-options: -Wall
+  build-depends:
+      base
+    , text
+  default-language: Haskell2010
+
+executable glob
+  main-is: Main.hs
+  other-modules:
+      Paths_glob
+  hs-source-dirs:
+      src/main/eta
+  ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base
+    , text
+  default-language: Haskell2010
